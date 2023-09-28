@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script Task8</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        .bg-img{
+            background-image: url("background_image_js_task8.jpeg");
+            height:550px;
+            margin-left: 150px;
+            margin-right: 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .btn{
+            background-color: red;
+            color:white;
+            border: 1px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 50% ;
+        }
+        .error-message{
+            color:red;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-img">
+    <h1 align="center" style="color:blue">Registration form</h1>
+    <table cell padding="0" cell spacing="0" width="50%" align="center">
+        <form onsubmit="return valiadteForm()">
+            <tr>
+                <td align="center"><label><b>First Name</b></label></td>
+                <td><input type="text" style="width:48%" id="firstName"/>
+                <span class="error-message" id="errorFirstName"></span></td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>Last Name</b></label></td>
+                <td><input type="text" style="width:48%" id="lastName"/>
+                <span class="error-message" id="errorLastName"></span></td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>Email</b></label></td>
+                <td><input type="email" style="width:48%" id="mail"/>
+                <span class="error-message" id="errormail"></span></td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>Password</b></label></td>
+                <td><input type="password" style="width:48%" id="pwd"/>
+                <span class="error-message" id="errorpwd"></span></td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>Re-enter Password</b></label></td>
+                <td><input type="password" style="width:48%" id="rpwd"/>
+                <span class="error-message" id="errorrpwd"></span></td>
+            </tr>
+            <tr>
+                <td align="center" rowspan="2"><label><b>Gender:</b></label></td>
+                <td><input type="radio" name="gen" /> Male</td>
+            </tr> 
+            <tr>
+                
+                <td><input type="radio" name="gen" /> Female</td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>Age:</b></label></td>
+                <td><input type="number" style="width:48%" id="age"/>
+                <span class="error-message" id="errorage"></span></td>
+            </tr>
+            <tr>    
+                <td align="center"><label><b>Phone Number</b></label></td>
+                <td><input type="tel" style="width:48%" id="phno"/>
+                <span class="error-message" id="errorphno"></span></td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>Address</b></label></td>
+                <td><textarea style="width:48%" id="add"></textarea>
+                <span class="error-message" id="erroradd"></span></td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>State</b></label></td>
+                <td><input type="State" style="width:48%" id="state"/>
+                <span class="error-message" id="errorstate"></span></td>
+            </tr>
+            <tr>
+                <td align="center"><label><b>Country</b></label></td>
+                <td><select>
+                    <option>Choose your country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Australia</option>
+                    <option>Canada</option>
+                </select></td>
+        
+            </tr>
+            <tr>
+                <td align="center"><label><b>Languages known</b></label></td>
+                <td><input type="checkbox"/>English
+                    <input type="checkbox"/>Kannada
+                    <input type="checkbox"/>Hindi
+                    <input type="checkbox"/>Telgu</td>
+            </tr>
+            <tr>        
+                <td colspan="2"><input type="checkbox"/>
+                    <label>Hereby I declare all the given details are true</lebel></td>
+            </tr> 
+            <tr>
+                <td colspan="2"><p align="right">Log in to <a href="https://www.ethnus.com" target="_blank"><u>Ethnus</u></a> website</p></td>
+            </tr> 
+        </table>
+        <br/>
+        <center>
+        <button type="submit" class="btn">Register</button>
+    </center>
+    </form>
+    </div>
+
+    <script>
+        function valiadteForm()
+        {
+            var firstName = document.getElementById("firstName").value;
+            var errorFirstName = document.getElementById("errorFirstName");
+            if(firstName.length<2)
+            {
+            errorFirstName.innerText = "POOR";
+            }else
+            {
+            errorFirstName.innerText = '';
+            }
+
+            var lastName = document.getElementById("lastName").value;
+            var errorLastName = document.getElementById("errorLastName");
+            if(lastName.length<2)
+            {
+            errorLastName.innerText = "POOR";
+            }else
+            {
+            errorLastName.innerText = '';
+            }
+
+            var mail = document.getElementById("mail").value;
+            var errormail = document.getElementById("errormail");
+            if(mail.length<10)
+            {
+            errormail.innerText = "POOR";
+            }else
+            {
+            errormail.innerText = '';
+            }
+            
+            var pwd = document.getElementById("pwd").value;
+            var errorpwd = document.getElementById("errorpwd");
+            if(pwd.length<5)
+            {
+            errorpwd.innerText = "POOR";
+            }else
+            {
+            errorpwd.innerText = '';
+            }
+
+            var rpwd = document.getElementById("rpwd").value;
+            var errorrpwd = document.getElementById("errorrpwd");  
+            if(rpwd.length<5 || rpwd != pwd)
+            {
+            errorrpwd.innerText = "POOR OR MISMATCH";
+            }else
+            {
+            errorrpwd.innerText = '';
+            }
+
+            var age = document.getElementById("age").value;
+            var errorage = document.getElementById("errorage");  
+            if(age.length < 1)
+            {
+            errorage.innerText = "POOR";
+            }else
+            {
+            errorage.innerText = '';
+            }
+
+            var phno = document.getElementById("phno").value;
+            var errorphno = document.getElementById("errorphno");  
+            if(phno.length<10)
+            {
+            errorphno.innerText = "POOR";
+            }else
+            {
+            errorphno.innerText = '';
+            }
+
+            var add = document.getElementById("add").value;
+            var erroradd = document.getElementById("erroradd");  
+            if(phno.length<5)
+            {
+            erroradd.innerText = "POOR";
+            }else
+            {
+            erroradd.innerText = '';
+            }
+
+            var state = document.getElementById("state").value;
+            var errorstate = document.getElementById("errorstate");  
+            if(state.length<2)
+            {
+            errorstate.innerText = "POOR";
+            }else
+            {
+            errorstate.innerText = '';
+            }
+        
+        
+        return false;
+    }
+    </script>
+</body>
+</html>

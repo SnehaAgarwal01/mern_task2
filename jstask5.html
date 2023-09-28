@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java script Task5</title>
+  <style>
+    .error-message {
+      color: red;
+      font-size: 14px;
+    }
+    .error-input {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <table>
+      <form onsubmit="return validateForm()">
+        <tr>
+          <td><label>Name: </label></td> 
+          <td><input type="text" id="fname"/>
+            <span id="nameerror" class="error-message" class="error-input"></span></td>
+        </tr>
+        <tr>
+          <td><label>Email: </label></td> 
+          <td><input type="email" id="femail"/>
+            <span id="emailerror" class="error-message" class="error-input"></span></td>
+        </tr>
+        <tr>
+          <td><label>Website: </label></td> 
+          <td><input type="url" id="furl"/>
+            <span id="urlerror" class="error-message" class="error-input"></span></td>
+        </tr>
+        <tr>
+          <td><label>Message: </label></td>
+          <td><textarea id="fmes"></textarea>
+            <span id="meserror" class="error-message" class="error-input"></span></td>
+        </tr>
+      </table>
+      <button type="submit">Submit</button>
+    </form>
+  </center>
+
+  <script>
+    function validateForm() {
+      var fname = document.getElementById("fname").value;
+      var nameerror = document.getElementById("nameerror");
+      if (fname.length == 0) {
+        nameerror.innerText = "This field is required";
+      } else {
+        nameerror.innerText = '';
+      }
+
+      var femail = document.getElementById("femail").value;
+      var emailerror = document.getElementById("emailerror");
+      if (femail.length == 0) {
+        emailerror.innerText = "A valid email address is required";
+      } else {
+        emailerror.innerText = '';
+      }
+
+      var furl = document.getElementById("furl").value;
+      var urlerror = document.getElementById("urlerror");
+      if (furl.length == 0) {
+        urlerror.innerText = "A valid URL is required";
+      } else {
+        urlerror.innerText = '';
+      }
+
+      var fmes = document.getElementById("fmes").value;
+      var meserror = document.getElementById("meserror");
+      if (fmes.length == 0) {
+        meserror.innerText = "This field is required";
+      } else {
+        meserror.innerText = '';
+      }
+      return false;  
+    }
+  </script>
+</body>
+</html>

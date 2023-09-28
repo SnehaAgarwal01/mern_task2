@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script Task4</title>
+</head>
+<body>
+<center>
+    <form>
+        <input type="button" onclick="showdate()" value="show date"/>
+    </form>
+    <p id="Date"></p>
+    <form>
+        <input type="button" onclick="showtime()" value="show time"/>     
+    </form>
+    <p id="Time"></p>
+</center>
+<script>
+    function getdate() 
+    {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December'];
+        const currentDate = new Date();
+        const day = currentDate.getDate();
+        const month = months[currentDate.getMonth()];
+        const year = currentDate.getFullYear();
+        const formattedDate = `${day}/${month.toLowerCase()}/${year}`;
+        return formattedDate;
+}
+function showdate() {
+  const formattedDate = getdate();
+  document.getElementById('Date').innerText = formattedDate;
+}
+
+    function showtime()
+    {
+        var curDate = new Date();
+        document.getElementById("Time").innerHTML = curDate;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <style>
+        nav {
+            width: 100%;
+        }
+        .reduce-gap p {
+            margin-bottom: 0.3em; 
+        }
+        .center-content {
+            text-align: center;
+        }
+        .card {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .badge-custom {
+            border: 2px solid blue;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: 100%; 
+            display: block;
+        }
+        .nav-link.text-dark {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light w-100">
+        <div class="container">
+            <div class="navbar-brand">Company brand</div>
+            <div class="nav">
+                <a href="#" class="nav-link text-dark">Features</a>
+                <a href="#" class="nav-link text-dark">Enterprises</a>
+                <a href="#" class="nav-link text-dark">Support</a>
+                <a href="#" class="nav-link text-dark">Pricing</a>
+                <button type="submit" class="text-info border-info">Sign up</button>
+            </div>
+        </div>
+    </nav>
+    <h3 class="text-center text-dark mt-4">Pricing</h3>
+    <div class="reduce-gap">
+        <p class="text-center text-dark">Quickly build an effective pricing table for your potential customers with this</p>
+        <p class="text-center text-dark">Bootstrap example. It's built with default Bootstrap components and utilities</p>
+        <p class="text-center text-dark">With little customization.</p>
+    </div>
+<center>
+    <main>
+    <div class="container">
+        <div class="row mx-6">
+            <div class="col-3 card">
+                <div class="card-header">Free</div>
+                <div class="card-body">
+                    <h2 class="card-title">
+                        <span class="text-dark">$0 </span>
+                        <span class="text-secondary">/mo</span>
+                    </h2>
+                    <div class="reduce-gap center-content">
+                        <p class="card-text text-dark">10 users included</p>
+                        <p class="card-text text-dark">2 GB of storage</p>
+                        <p class="card-text text-dark">Email support</p>
+                        <p class="card-text text-dark">Help center access</p>
+                    </div>
+                    <p class="badge bg-light text-info border-info badge-custom">Sign up for free</p>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <div class="card-body">
+                    <div class="card-header">Pro</div>
+                    <h2 class="card-title">
+                        <span class="text-dark">$15 </span>
+                        <span class="text-secondary">/mo</span>
+                    </h2>
+                    <div class="reduce-gap center-content">
+                        <p class="card-text text-dark">20 users included</p>
+                        <p class="card-text text-dark">10 GB of storage</p>
+                        <p class="card-text text-dark">Priority email support</p>
+                        <p class="card-text text-dark">Help center access</p>
+                    </div>
+                    <p class="badge bg-info text-light border-info badge-custom">Get started</p>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <div class="card-body">
+                    <div class="card-header">Enterprise</div>
+                    <h2 class="card-title">
+                        <span class="text-dark">$29 </span>
+                        <span class="text-secondary">/mo</span>
+                    </h2>
+                    <div class="reduce-gap center-content">
+                        <p class="card-text text-dark">30 users included</p>
+                        <p class="card-text text-dark">15 GB of storage</p>
+                        <p class="card-text text-dark">Phone and email support</p>
+                        <p class="card-text text-dark">Help center access</p>
+                    </div>
+                    <p class="badge bg-info text-light border-info badge-custom">Contact us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</center>
+    <center>
+    <footer>
+        <div class="row mx-5">
+            <div class="col-3">
+                <img src="boostrap_logo.png" alt="bootstrap" style="height:40px; width:40px">
+                <p>&copy; 2017</p>
+            </div>
+            <div class="col-3">
+                <h6>Features</h6>
+            <div class="reduce-gap">
+                <p>Cool stuff</p>
+                <p>Random feature</p>
+                <p>Team feature</p>
+            </div>
+            </div>
+            <div class="col-3">
+                <h6>Resources</h6>
+            <div class="reduce-gap">
+                <p>Resource</p>
+                <p>Resource name</p>
+                <p>Another resource</p>
+            </div>
+            </div>
+            <div class="col-3">
+                <h6>About</h6>
+            <div class="reduce-gap">
+                <p>Team</p>
+                <p>Loactions</p>
+                <p>Privacy</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+</center>
+</body>
+</html>

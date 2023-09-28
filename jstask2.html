@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script Task2</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+    function alphabet_order(str){
+        return str.split('').sort().join('');
+    }
+    const str = "webmaster"
+    const result = alphabet_order(str);
+
+    const outputDiv = document.getElementById("output");
+    outputDiv.innerText = "Example string: " + str + "\nExpected Output: " + result;
+
+</script>
+</body>
+</html>

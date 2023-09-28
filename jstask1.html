@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task1</title>
+</head>
+<body>
+    <div id="output"></div>
+    
+    <script>
+        function reverseFunc(num, reversed=0){
+            if(num == 0){
+                return reversed;
+            }
+            return reverseFunc(Math.floor(num/10), reversed * 10 + num % 10);
+        }
+        
+        const num = 32243;
+        const result = reverseFunc(num);
+        
+        const outputDiv = document.getElementById('output');
+        outputDiv.innerText = "Example x = " + num + "\nExpected Output = " + result;
+    </script>
+</body>
+</html>

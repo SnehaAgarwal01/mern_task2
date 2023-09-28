@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Task 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <style>
+        .text-dark-blue {
+            color: rgb(2, 2, 35);
+        }
+
+        .bg-dark-blue {
+            background-color: rgb(2, 2, 35);
+        }
+
+        .circle {
+            border-radius: 50% !important;
+            border: dotted 2px white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-warning">
+        <div class="navbar container">
+            <p class="h1 col-md-2 col-12 m-2 p-2 text-center text-md-start" style="font-weight: 700">
+                Buliderz
+            </p>
+            <div class="row justify-content-end col-12 col-md-10 p-3">
+                <div class="col-12 col-md-3 d-flex m-2">
+                    <img src="opening hour bstask2.png" alt="opening hour" style="height:60px; width:60px">
+                    <div class="d-flex flex-column ps-2">
+                        <div class="h6">Opening Hour</div>
+                        <div>Mon - Fri,8:00 - 9:00</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 d-flex m-2">
+                    <img src="call bstask2.png" alt="call" style="height:60px; width:60px">
+                    <div class="d-flex flex-column ps-2">
+                        <div class="h6">Call Us</div>
+                        <div>+012 345 6789</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 d-flex m-2">
+                    <img src="email bstask2.png" alt="email" style="height:60px; width:60px">
+                    <div class="d-flex flex-column ps-2">
+                        <div class="h6">Email Us</div>
+                        <div>info@example.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar bg-dark-blue navbar-expand-md p-2">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-list text-light m-3" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <ul class="order-2 order-md-1 nav navbar-collapse collapse col-12 col-md-9" id="demo">
+                    <li class="nav-item col-12 col-md-auto">
+                        <a href="#" class="nav-link text-light p-4">HOME</a>
+                    </li>
+                    <li class="nav-item col-12 col-md-auto">
+                        <a href="#" class="nav-link text-light p-4">ABOUT</a>
+                    </li>
+                    <li class="nav-item col-12 col-md-auto">
+                        <a href="#" class="nav-link text-light p-4">SERVICE</a>
+                    </li>
+                    <li class="nav-item col-12 col-md-auto">
+                        <a href="#" class="nav-link text-light p-4">TEAM</a>
+                    </li>
+                    <li class="nav-item col-12 col-md-auto">
+                        <a href="#" class="nav-link text-light p-4">PROJECT</a>
+                    </li>
+                    <li class="nav-item col-12 col-md-auto">
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle text-light p-4" data-bs-toggle="dropdown">
+                                PAGES
+                            </button>
+                            <div class="dropdown-menu bg-dark-blue">
+                                <div class="dropdown-item text-warning">Page 1</div>
+                                <div class="dropdown-item text-warning">Page 2</div>
+                                <div class="dropdown-item text-warning">Page 3</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item col-12 col-md-auto">
+                        <a href="#" class="nav-link text-light p-4">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="order-1 order-md-2 col-6 col-md-3 d-flex align-items-center justify-content-end">
+                    <div class="border border-light text-light p-2 m-2 m-md-4">
+                        <a href="#" class="nav-link">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="slideshow" style="
+              background-color: rgb(75, 73, 73);
+              background-image: url(bstask2.jpg);
+              background-size: cover;
+              background-blend-mode: multiply;
+              height: 100vh;
+            ">
+                    <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100%">
+                        <div class="h3 text-light p-2">We Are Professional</div>
+                        <div class="h1 text-light p-2">For Your Dream Project</div>
+                        <div class="border border-light text-light p-2 m-3">
+                            <a href="#" class="text-light" style="text-decoration: none">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="slideshow" style="
+              background-color: rgb(75, 73, 73);
+              background-image: url(bstask2.jpg);
+              background-size: cover;
+              background-blend-mode: multiply;
+              height: 100vh;
+            ">
+                    <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100%">
+                        <div class="h3 text-light p-2">We Are Professional</div>
+                        <div class="h1 text-light p-2">For Your Dream Project</div>
+                        <div class="border border-light text-light p-2 m-3">
+                            <a href="#" class="text-light" style="text-decoration: none">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="slideshow" style="
+              background-color: rgb(75, 73, 73);
+              background-image: url(bstask2.jpg);
+              background-size: cover;
+              background-blend-mode: multiply;
+              height: 100vh;">
+                    <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100%">
+                        <div class="h3 text-light p-2">We Are Professional</div>
+                        <div class="h1 text-light p-2">For Your Dream Project</div>
+                        <div class="border border-light text-light p-2 m-3">
+                            <a href="#" class="text-light" style="text-decoration: none">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="row">
+
+        <div class="col-12 col-md-4 d-flex bg-dark-blue align-items-center">
+            <img class="rounded m-3 p-3" src="expert worker.png" alt="expertWorker" style="height:130px; width:130px">
+            <div class="d-flex flex-column pe-5 py-5">
+                <div class="h4 text-warning">Expert Worker</div>
+                <div class="text-warning">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                    praesentium placeat nesciunt!
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 d-flex bg-warning align-items-center">
+            <img class="rounded m-3 p-3" src="Quality work.png" alt="expertWorker" style="height:130px; width:130px">
+            <div class="d-flex flex-column pe-5 py-5">
+                <div class="h4 text-dark-blue">Quality Work</div>
+                <div class="text-dark-blue">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                    praesentium placeat nesciunt!
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-4 d-flex bg-dark-blue align-items-center">
+            <img class="rounded m-3 p-3" src="support.png" alt="expertWorker" style="height:130px; width:130px">
+            <div class="d-flex flex-column pe-5 py-5">
+                <div class="h4 text-warning">24/7 Support</div>
+                <div class="text-warning">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                    praesentium placeat nesciunt!
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+</html>
